@@ -1,0 +1,82 @@
+* 
+  box-sizing: border-box
+  font-size: 16px
+
+html,
+body
+  margin: 0
+  padding: 0
+  font-family: 'Inter', Arial, sans-serif
+  font-size: 16px
+  line-height: 1.4
+  color: $white
+
+a
+  font-size: inherit
+  line-height: inherit
+  color: inherit
+
+.container
+  max-width: 1200px
+  width: 100%
+  margin: 0 auto
+  padding: 0 3%
+
+.section
+  z-index: 2
+  position: relative
+
+.block-bottom
+  height: 100%
+  margin-left: 10px
+  padding: 28px 16px 16px
+  background: url('/src/assets/img/gradient-1.jpg') no-repeat 0% 0%
+  background-size: cover
+  border-radius: 25px
+
+  &-inner
+    display: flex
+    align-items: center
+
+    @media (max-width: 575px)
+      flex-direction: column
+
+  &-pic
+    width: 15%
+    height: 70px
+    background-size: contain
+    background-repeat: no-repeat
+    border-radius: 16px
+
+    @media (max-width: 575px)
+      width: 30%
+      margin-right: 0
+
+  &-texts
+    width: 85%
+    padding-left: 20px
+
+    @media (max-width: 575px)
+      width: 100%
+      padding-top: 16px
+      padding-left: 0
+
+  &-text-block
+    
+    &:first-child
+      padding-bottom: 12px
+
+    &-title
+      padding-bottom: 4px
+      font-size: 15px
+      font-weight: 700
+
+    &-desc
+      font-size: 13px
+      color: rgba($white, 0.75)
+
+.pic-humidity
+  background-image: url('/src/assets/img/humidity.png')
+
+.pic-coords
+  background-image: url('/src/assets/img/compass.png')
